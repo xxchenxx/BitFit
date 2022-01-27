@@ -10,7 +10,7 @@ LOGGER = logging.getLogger(__file__)
 PADDING = "max_length"
 MAX_SEQUENCE_LEN = 128
 
-RAND_UNIFORM_MASK_SIZE = {'bert-base-cased': 100000, 'bert-large-cased': 280000, 'roberta-base': 105000}
+RAND_UNIFORM_MASK_SIZE = {'bert-base-uncased': 100000, 'bert-base-cased': 100000, 'bert-large-cased': 280000, 'roberta-base': 105000}
 
 
 def _parse_args():
@@ -22,7 +22,7 @@ def _parse_args():
     parser.add_argument('--task-name', '-t', required=True, type=str, help='GLUE task name for evaluation.',
                         choices={'cola', 'mnli', 'mrpc', 'qnli', 'qqp', 'rte', 'sst2', 'stsb', 'wnli'})
     parser.add_argument('--model-name', '-m', type=str, default='bert-base-cased', help='model-name to evaluate with.',
-                        choices={'bert-base-cased', 'bert-large-cased', 'roberta-base'})
+                        choices={'bert-base-uncased', 'bert-base-cased', 'bert-large-cased', 'roberta-base'})
 
     parser.add_argument('--fine-tune-type', '-f', required=True, type=str,
                         help='Which fine tuning process to perform, types are the types that were performed in BitFit paper.',
