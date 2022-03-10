@@ -1,4 +1,4 @@
-name: torch5
+name: para
 channels:
   - defaults
 dependencies:
@@ -112,5 +112,5 @@ dependencies:
     - widgetsnbextension==3.5.1
     - xxhash==2.0.0
     - zipp==3.4.0
-prefix: /home/dsi/eladbz/anaconda3/envs/torch5
+
 
