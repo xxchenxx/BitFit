@@ -2,7 +2,7 @@
 
 ## Environment
 ```bash
-conda create -n para -f environment.yml
+conda env create -n para -f environment.yml
 ```
 ## BitFit
 
