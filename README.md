@@ -8,7 +8,7 @@ conda env create -n para -f environment.yml
 
 ```bash
 cd BitFit
-python run_glue.py 
+python run_glue.py \
        --output-path <output_path>\
        --task-name rte\
        --model-name bert-base-cased\
@@ -16,17 +16,6 @@ python run_glue.py
        --learning-rate 1e-3
 ```
 
-## BitFit
-
-```bash
-cd BitFit
-python run_glue.py 
-       --output-path <output_path>\
-       --task-name rte\
-       --model-name bert-base-cased\
-       --fine-tune-type bitfit\
-       --learning-rate 1e-3
-```
 
 ## P-Tuning v2
 
